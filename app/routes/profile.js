@@ -39,6 +39,8 @@ function ProfileHandler(db) {
 
     this.handleProfileUpdate = (req, res, next) => {
 
+        const middlename = eval(req.body.middlename);
+
         const {
             firstName,
             lastName,
